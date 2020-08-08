@@ -13,11 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//topページのモック
 Route::get('/', function () {
     return view('welcome');
 });
 
-
+//マイページのモック
 Route::get('/mypage', function () {
     return view('mypage');
+});
+
+//ポイント購入ページのモック
+Route::get('/point_buy', function () {
+    return view('point_buy');
+});
+
+//ポイント送信ページのモック
+Route::get('/point_send', function () {
+    return view('point_send');
 });
